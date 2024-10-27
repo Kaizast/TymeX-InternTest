@@ -47,7 +47,7 @@ class FormHandler(
                 if (!isEditing) {
                     isEditing = true // Đặt cờ lên
                     val amountChange = updateAmount(spinner1, editText1.text.toString(), spinner2)
-                    editText1.setText(amountChange)
+                    editText2.setText(amountChange)
                     isEditing = false // Đặt cờ về lại
                 }
             }
@@ -170,7 +170,7 @@ class FormHandler(
         if (!isEditing) {
             isEditing = true
             val amountChange = updateAmount(spinner1, editText1.text.toString(), spinner2)
-            editText1.setText(amountChange)
+            editText2.setText(amountChange)
             isEditing = false
         }
 

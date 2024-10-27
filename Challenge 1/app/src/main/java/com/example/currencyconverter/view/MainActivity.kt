@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
                 else{
                     if(content is List<*>){
                         status = "ok"
+                        errorText.setText("")
                         val currList = content as List<Currency>
                         formHandler.updateCurrList(currList)
                         formHandler.setupListeners()
